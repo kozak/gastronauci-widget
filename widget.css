@@ -1,0 +1,149 @@
+/* Gdy umieszczamy button w .contact restauracji */
+#restaurant .data .contact a.btn-skubacz {
+	color: white;
+}
+
+#restaurants_list .restaurant .btn-skubacz {
+	/* pozycja i rozmiar, jak przycisk Stoliczku*/
+	position: absolute;
+	padding: 4px 18px;
+	top: 8px;
+	right: 10px;
+	line-height: 10px;
+	font-size: 12px;
+}
+
+
+/*Styl buttona*/
+
+.btn-skubacz {
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0px 12px;
+	margin: 0;
+	font-size: 80%;
+	line-height: 20px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid #bbbbbb;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-bottom-color: #a2a2a2;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-skubacz.btn-primary {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-decoration: none;
+	background-color: #006dcc;
+	background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+	background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+	background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+	background-repeat: repeat-x;
+	border-color: #0044cc #0044cc #002a80;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff0088cc', endColorstr = '#ff0044cc', GradientType = 0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.btn-skubacz.btn-small {
+	padding: 0px 10px;
+	line-height: 18px;
+	font-size: 70%;
+}
+
+
+
+/*Wersja okragla buttona (gdy ma byc pokazywana kolo okraglego buttona stoliczku)*/
+
+.btn-skubacz.btn-rounded {
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+
+
+/* Style popupa */
+
+#skubacz_popup {
+	background: white;
+	width: 450px;
+	padding: 20px 20px 70px 20px;
+	border: 3px solid #006dcc;
+	position: relative;
+}
+
+#skubacz_popup h1 span {
+	display: inline-block;
+	padding: 0 20px;
+	background: white;
+}
+
+#skubacz_popup h1 {
+	font-size: 18px;
+	text-align: center;
+	background: transparent url(/images/stoliczku/2l.png) 0 50% repeat-x;  /* TODO: Uwaga tutaj odnosnik do waszego obrazka*/
+	margin-bottom: 30px;
+	font-family: Arial, Verdana, Tahoma, sans-serif;
+	font-weight: bold;
+	padding: 5px 10px 10px 10px;
+	width: 400px;
+	margin: 0 auto;
+}
+
+#skubacz_popup p {
+	font-size: 18px;
+	color: #4F4F4F;
+	padding: 5px;
+	text-align: center;
+}
+
+#skubacz_popup .delimeter {
+	position: absolute;
+	height: 30px;
+	width: 1px;
+	border-left: 1px dotted #AAA;
+	bottom: 25px;
+	left: 244px;
+}
+
+#skubacz_popup .yes, #skubacz_popup .no {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #006dcc;
+	background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+	background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+	background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+	background-repeat: repeat-x;
+	border-color: #0044cc #0044cc #002a80;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff0088cc', endColorstr = '#ff0044cc', GradientType = 0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: none;
+	font-weight: bold;
+	font-family: Arial, Verdana, Tahoma, sans-serif;
+	font-size: 17px;
+	text-decoration: none;
+	position: absolute;
+	padding: 10px 15px;
+	bottom: 20px;
+}
+
+#skubacz_popup .no {
+	left: 140px;
+}
+
+#skubacz_popup .yes {
+	right: 140px;
+}
+

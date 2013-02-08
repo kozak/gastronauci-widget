@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="widget.css"/>
+	<link href="http://assets2.gastronauci.pl/stylesheets/cache/index_styles.css?1360332553" media="screen" rel="stylesheet" type="text/css" />
+	<style>
+		.container {
+			margin: 40px auto;
+			width: 940px;
+			background:white;
+		}
+		.example {
+			padding: 10px;
+			margin-bottom: 10px;
+			border-bottom: 1px solid lightgray;
+		}
+		.example p {
+			margin-bottom: 10px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class='container'>
+	<div class='example'>
+		<p>Button gdy na stronie jest prostokątny przycisk Zarezerwuj stolik</p>		
+		<a href="{ url }" class="btn-skubacz btn-primary">
+		    Zamów jedzonko on-line
+		</a>		
+	</div>
+	
+	<div class='example'>
+		<p>Button gdy na stronie jest okrągły przycisk Stoliczku.pl</p>
+		<a href="{ url }" class="btn-skubacz btn-primary btn-rounded">
+		    Zamów jedzonko on-line
+		</a>
+	</div>
+	
+	<div class='example'>
+		<p>Button na stronę katalogu, gdy nie ma przycisku Stoliczku </p>
+		<div id="restaurant_list">
+			<div class='restaurant'>
+				<a href="{ url }" class="btn-skubacz btn-primary">
+				    Zamów on-line
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class='example'>
+		<p>Popup</p>
+		<div>
+			<div id='skubacz_popup' >
+			    <h1><span>Zamów jedzonko online</span></h1>
+			    <p>Czy chcesz zamówić online w restauracji: <br>{nazwa_restauracji}</p>
+			    <a href="#" class="no">« nie</a>
+			    <span class="delimeter"></span>
+			    <a href="{ url }" class="yes samewindow">tak »</a>
+			</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>
+
